@@ -10,7 +10,12 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+}
+
+.video-info a {
+  text-decoration: none;
+  color: black;
 }
 
 
@@ -27,7 +32,8 @@
 }
 
 .thumbnail-row {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
+  position: relative;
 }
 
 .video-author, .video-stats {
@@ -44,4 +50,34 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 16px;
   row-gap: 40px;
+}
+
+@media (min-width:1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width:750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width:425px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.video-time {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px; 
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
 }
