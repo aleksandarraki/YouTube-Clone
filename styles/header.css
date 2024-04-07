@@ -45,7 +45,7 @@
   border-radius: 2px;
   box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
   width: 0;
-  /* search bar has its own width tahat is fixed.To prevent that we set eidth to 0. line 41 */
+  /* search bar has its own width tahat is fixed.To prevent that we set width to 0. line 41 */
 }
 
 .search-bar:focus {
@@ -178,3 +178,17 @@
   height: 30px;
   border-radius: 50%;
 }
+
+/* @media (max-width:700px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 70px;
+    width: 100%;
+  }
+} */
